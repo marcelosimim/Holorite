@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A326B111292BFD9200A43233 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326B110292BFD9200A43233 /* Double.swift */; };
+		A326B113292C00D000A43233 /* Salary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326B112292C00D000A43233 /* Salary.swift */; };
+		A326B115292C014300A43233 /* Discount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326B114292C014300A43233 /* Discount.swift */; };
 		A3C40CAF292BDB2F0063F09C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C40CAE292BDB2F0063F09C /* AppDelegate.swift */; };
 		A3C40CB1292BDB2F0063F09C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C40CB0292BDB2F0063F09C /* SceneDelegate.swift */; };
 		A3C40CB8292BDB310063F09C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3C40CB7292BDB310063F09C /* Assets.xcassets */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A326B110292BFD9200A43233 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		A326B112292C00D000A43233 /* Salary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salary.swift; sourceTree = "<group>"; };
+		A326B114292C014300A43233 /* Discount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discount.swift; sourceTree = "<group>"; };
 		A3C40CAB292BDB2F0063F09C /* Holorite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Holorite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3C40CAE292BDB2F0063F09C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3C40CB0292BDB2F0063F09C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +101,8 @@
 		A3C40CC4292BDB520063F09C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A326B112292C00D000A43233 /* Salary.swift */,
+				A326B114292C014300A43233 /* Discount.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,6 +146,7 @@
 			children = (
 				A3C40CCE292BDDF90063F09C /* UIColor.swift */,
 				A3C40CD5292BDF550063F09C /* UIView.swift */,
+				A326B110292BFD9200A43233 /* Double.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -222,12 +231,15 @@
 			files = (
 				A3C40CC8292BDC470063F09C /* FirstViewController.swift in Sources */,
 				A3C40CAF292BDB2F0063F09C /* AppDelegate.swift in Sources */,
+				A326B115292C014300A43233 /* Discount.swift in Sources */,
 				A3C40CDA292BE3720063F09C /* MainButton.swift in Sources */,
+				A326B113292C00D000A43233 /* Salary.swift in Sources */,
 				A3C40CB1292BDB2F0063F09C /* SceneDelegate.swift in Sources */,
 				A3C40CD6292BDF550063F09C /* UIView.swift in Sources */,
 				A3C40CCC292BDC910063F09C /* ResultViewController.swift in Sources */,
 				A3C40CD8292BE03B0063F09C /* FirstView.swift in Sources */,
 				A3C40CD4292BDF1E0063F09C /* InputTextField.swift in Sources */,
+				A326B111292BFD9200A43233 /* Double.swift in Sources */,
 				A3C40CCF292BDDF90063F09C /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
