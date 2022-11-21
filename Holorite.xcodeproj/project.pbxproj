@@ -13,6 +13,10 @@
 		A3C40CC8292BDC470063F09C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C40CC7292BDC470063F09C /* FirstViewController.swift */; };
 		A3C40CCC292BDC910063F09C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C40CCB292BDC910063F09C /* ResultViewController.swift */; };
 		A3C40CCF292BDDF90063F09C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C40CCE292BDDF90063F09C /* UIColor.swift */; };
+		A3C40CD4292BDF1E0063F09C /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C40CD3292BDF1E0063F09C /* InputTextField.swift */; };
+		A3C40CD6292BDF550063F09C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C40CD5292BDF550063F09C /* UIView.swift */; };
+		A3C40CD8292BE03B0063F09C /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C40CD7292BE03B0063F09C /* FirstView.swift */; };
+		A3C40CDA292BE3720063F09C /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C40CD9292BE3720063F09C /* MainButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		A3C40CC7292BDC470063F09C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		A3C40CCB292BDC910063F09C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		A3C40CCE292BDDF90063F09C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		A3C40CD3292BDF1E0063F09C /* InputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
+		A3C40CD5292BDF550063F09C /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		A3C40CD7292BE03B0063F09C /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		A3C40CD9292BE3720063F09C /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 		A3C40CAD292BDB2F0063F09C /* Holorite */ = {
 			isa = PBXGroup;
 			children = (
+				A3C40CD2292BDF030063F09C /* Components */,
 				A3C40CC6292BDB740063F09C /* Resources */,
 				A3C40CC5292BDB580063F09C /* AppDelegate */,
 				A3C40CC4292BDB520063F09C /* Model */,
@@ -111,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				A3C40CC7292BDC470063F09C /* FirstViewController.swift */,
+				A3C40CD7292BE03B0063F09C /* FirstView.swift */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -127,8 +137,18 @@
 			isa = PBXGroup;
 			children = (
 				A3C40CCE292BDDF90063F09C /* UIColor.swift */,
+				A3C40CD5292BDF550063F09C /* UIView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A3C40CD2292BDF030063F09C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A3C40CD3292BDF1E0063F09C /* InputTextField.swift */,
+				A3C40CD9292BE3720063F09C /* MainButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +222,12 @@
 			files = (
 				A3C40CC8292BDC470063F09C /* FirstViewController.swift in Sources */,
 				A3C40CAF292BDB2F0063F09C /* AppDelegate.swift in Sources */,
+				A3C40CDA292BE3720063F09C /* MainButton.swift in Sources */,
 				A3C40CB1292BDB2F0063F09C /* SceneDelegate.swift in Sources */,
+				A3C40CD6292BDF550063F09C /* UIView.swift in Sources */,
 				A3C40CCC292BDC910063F09C /* ResultViewController.swift in Sources */,
+				A3C40CD8292BE03B0063F09C /* FirstView.swift in Sources */,
+				A3C40CD4292BDF1E0063F09C /* InputTextField.swift in Sources */,
 				A3C40CCF292BDDF90063F09C /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,4 +15,7 @@ extension UIColor {
 
 extension UIColor {
     static var background = colorBuilder("background")
+    static var border = colorBuilder("border")
+    static var mainButton = colorBuilder("mainButton")
+    static var placeholder = colorBuilder("placeholder")
 }

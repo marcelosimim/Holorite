@@ -8,9 +8,20 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    private let firstView = FirstView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
+    }
+
+    private func setupView() {
         title = "Holerite"
-        view.backgroundColor = .background
+        view = firstView
+
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = UIColor.white
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
 }
