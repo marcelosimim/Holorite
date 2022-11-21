@@ -9,21 +9,19 @@
 /* Begin PBXBuildFile section */
 		A3C40CAF292BDB2F0063F09C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C40CAE292BDB2F0063F09C /* AppDelegate.swift */; };
 		A3C40CB1292BDB2F0063F09C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C40CB0292BDB2F0063F09C /* SceneDelegate.swift */; };
-		A3C40CB3292BDB2F0063F09C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C40CB2292BDB2F0063F09C /* ViewController.swift */; };
-		A3C40CB6292BDB2F0063F09C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3C40CB4292BDB2F0063F09C /* Main.storyboard */; };
 		A3C40CB8292BDB310063F09C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3C40CB7292BDB310063F09C /* Assets.xcassets */; };
-		A3C40CBB292BDB310063F09C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3C40CB9292BDB310063F09C /* LaunchScreen.storyboard */; };
+		A3C40CC8292BDC470063F09C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C40CC7292BDC470063F09C /* FirstViewController.swift */; };
+		A3C40CCC292BDC910063F09C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C40CCB292BDC910063F09C /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A3C40CAB292BDB2F0063F09C /* Holorite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Holorite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3C40CAE292BDB2F0063F09C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3C40CB0292BDB2F0063F09C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A3C40CB2292BDB2F0063F09C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A3C40CB5292BDB2F0063F09C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3C40CB7292BDB310063F09C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A3C40CBA292BDB310063F09C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3C40CBC292BDB310063F09C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3C40CC7292BDC470063F09C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		A3C40CCB292BDC910063F09C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +54,70 @@
 		A3C40CAD292BDB2F0063F09C /* Holorite */ = {
 			isa = PBXGroup;
 			children = (
-				A3C40CAE292BDB2F0063F09C /* AppDelegate.swift */,
-				A3C40CB0292BDB2F0063F09C /* SceneDelegate.swift */,
-				A3C40CB2292BDB2F0063F09C /* ViewController.swift */,
-				A3C40CB4292BDB2F0063F09C /* Main.storyboard */,
-				A3C40CB7292BDB310063F09C /* Assets.xcassets */,
-				A3C40CB9292BDB310063F09C /* LaunchScreen.storyboard */,
+				A3C40CC6292BDB740063F09C /* Resources */,
+				A3C40CC5292BDB580063F09C /* AppDelegate */,
+				A3C40CC4292BDB520063F09C /* Model */,
+				A3C40CC3292BDB4F0063F09C /* View */,
+				A3C40CC2292BDB4B0063F09C /* Controller */,
 				A3C40CBC292BDB310063F09C /* Info.plist */,
 			);
 			path = Holorite;
+			sourceTree = "<group>";
+		};
+		A3C40CC2292BDB4B0063F09C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A3C40CC3292BDB4F0063F09C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3C40CC9292BDC5A0063F09C /* First */,
+				A3C40CCA292BDC5F0063F09C /* Result */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3C40CC4292BDB520063F09C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3C40CC5292BDB580063F09C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A3C40CAE292BDB2F0063F09C /* AppDelegate.swift */,
+				A3C40CB0292BDB2F0063F09C /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A3C40CC6292BDB740063F09C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A3C40CB7292BDB310063F09C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A3C40CC9292BDC5A0063F09C /* First */ = {
+			isa = PBXGroup;
+			children = (
+				A3C40CC7292BDC470063F09C /* FirstViewController.swift */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		A3C40CCA292BDC5F0063F09C /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				A3C40CCB292BDC910063F09C /* ResultViewController.swift */,
+			);
+			path = Result;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3C40CBB292BDB310063F09C /* LaunchScreen.storyboard in Resources */,
 				A3C40CB8292BDB310063F09C /* Assets.xcassets in Resources */,
-				A3C40CB6292BDB2F0063F09C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +189,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3C40CB3292BDB2F0063F09C /* ViewController.swift in Sources */,
+				A3C40CC8292BDC470063F09C /* FirstViewController.swift in Sources */,
 				A3C40CAF292BDB2F0063F09C /* AppDelegate.swift in Sources */,
 				A3C40CB1292BDB2F0063F09C /* SceneDelegate.swift in Sources */,
+				A3C40CCC292BDC910063F09C /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		A3C40CB4292BDB2F0063F09C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A3C40CB5292BDB2F0063F09C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A3C40CB9292BDB310063F09C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A3C40CBA292BDB310063F09C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A3C40CBD292BDB310063F09C /* Debug */ = {
@@ -292,7 +325,6 @@
 				INFOPLIST_FILE = Holorite/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +352,6 @@
 				INFOPLIST_FILE = Holorite/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
