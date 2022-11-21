@@ -11,6 +11,6 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Holerite"
-        view.backgroundColor = .white
+        view.backgroundColor = .background
     }
 }
