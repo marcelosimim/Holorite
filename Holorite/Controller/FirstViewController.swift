@@ -7,21 +7,22 @@
 
 import UIKit
 
-class FirstViewController: UIViewController  {
+class FirstViewController: UIViewController, FirstViewDelegate {
     private let firstView = FirstView()
-    private var salaryTypedString = ""
-    private var discountTypedString = ""
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+
+    override func loadView() {
+        super.loadView()
         setupView()
-        setupTextFields()
-        setupButtons()
     }
 
     private func setupView() {
         title = "Holerite"
         view = firstView
+        firstView.delegate = self
 
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = UIColor.white
@@ -29,22 +30,7 @@ class FirstViewController: UIViewController  {
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
 
-    private func setupTextFields() {
-        firstView.salaryTextField.delegate = self
-        firstView.discountTextField.delegate = self
-
-        let closeKeyboard = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-        view.addGestureRecognizer(closeKeyboard)
-    }
-
-    private func setupButtons() {
-        firstView.calculateButton.addTarget(self, action: #selector(didTapCalculate), for: .touchUpInside)
-    }
-
-    @objc private func didTapCalculate() {
-        let salary = Salary(value: getAmount(firstView.salaryTextField.text))
-        let discount = Discount(value: getAmount(firstView.discountTextField.text))
-
+    func didTapCalculate(_ salary: Salary, _ discount: Discount) {
         if salary.isValid() && discount.isValid() {
             let resultViewController = ResultViewController()
             resultViewController.salary = salary.value
@@ -52,57 +38,4 @@ class FirstViewController: UIViewController  {
             present(resultViewController, animated: true)
         }
     }
-
-    @objc private func dismissKeyboard() {
-        view.endEditing(true)
-    }
-
-    private func getAmount(_ stringAmount: String?) -> Double? {
-        guard let stringAmount = stringAmount else { return 0 }
-        let decimalValue = stringAmount.replacingOccurrences(of: ",", with: ".").replacingOccurrences(of: "R$", with: "")
-
-        return Double(decimalValue)
-    }
-}
-
-extension FirstViewController: UITextFieldDelegate {
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        var amountTypedString = textField.tag == 0 ? salaryTypedString : discountTypedString
-        let formatter = NumberFormatter()
-        formatter.minimumFractionDigits = 2
-        formatter.maximumFractionDigits = 2
-        formatter.decimalSeparator = ","
-
-        if string.count > 0 {
-            amountTypedString += string
-            let decNumber = NSDecimalNumber(string: amountTypedString).multiplying(by: 0.01)
-            textField.text = "R$" + (formatter.string(from: decNumber) ?? "")
-        } else {
-            amountTypedString = String(amountTypedString.dropLast())
-            if amountTypedString.count > 0 {
-                let decNumber = NSDecimalNumber(string: amountTypedString).multiplying(by: 0.01)
-                textField.text = "R$" + (formatter.string(from: decNumber) ?? "")
-            } else {
-                textField.text = "R$0,00"
-            }
-        }
-
-        if textField.tag == 0 {
-            salaryTypedString = amountTypedString
-        } else {
-            discountTypedString = amountTypedString
-        }
-
-        return false
-    }
-
-    func textFieldShouldClear(_ textField: UITextField) -> Bool {
-        if textField.tag == 0 {
-            salaryTypedString = ""
-        } else {
-            discountTypedString = ""
-        }
-        return true
-    }
-
 }
