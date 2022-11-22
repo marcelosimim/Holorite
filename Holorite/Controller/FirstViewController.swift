@@ -12,16 +12,16 @@ class FirstViewController: UIViewController, FirstViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
     }
 
     override func loadView() {
         super.loadView()
-        setupView()
+        view = firstView
     }
 
     private func setupView() {
         title = "Holerite"
-        view = firstView
         firstView.delegate = self
 
         let appearance = UINavigationBarAppearance()

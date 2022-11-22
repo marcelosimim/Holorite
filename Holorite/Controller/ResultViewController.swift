@@ -15,12 +15,12 @@ class ResultViewController: UIViewController, ResultViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         resultView.setupCells(salary: salary ?? 0, discount: discount ?? 0)
+        resultView.delegate = self
     }
 
     override func loadView() {
         super.loadView()
         view = resultView
-        resultView.delegate = self
     }
 
     func didTapClose() {
