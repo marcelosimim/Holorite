@@ -15,10 +15,14 @@ class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view = resultView
         setupTableView()
         setupButtons()
         setupCells()
+    }
+
+    override func loadView() {
+        super.loadView()
+        view = resultView
     }
 
     private func setupTableView() {
