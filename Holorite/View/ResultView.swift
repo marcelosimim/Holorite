@@ -11,7 +11,12 @@ protocol ResultViewDelegate: AnyObject {
     func didTapClose()
 }
 
-class ResultView: UIView {
+protocol ResultViewProcotol {
+    var delegate: ResultViewDelegate? { get set }
+    func setupCells(salary: Double, discount: Double)
+}
+
+class ResultView: UIView, ResultViewProcotol {
     weak var delegate: ResultViewDelegate?
     private var cells: [AmountCell] = []
     private var salary: Double = 0

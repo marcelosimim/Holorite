@@ -8,9 +8,18 @@
 import UIKit
 
 class ResultViewController: UIViewController, ResultViewDelegate {
-    private let resultView = ResultView()
+    private var resultView: ResultViewProcotol
     var salary: Double?
     var discount: Double?
+
+    init(resultView: ResultViewProcotol = ResultView()) {
+        self.resultView = resultView
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +29,7 @@ class ResultViewController: UIViewController, ResultViewDelegate {
 
     override func loadView() {
         super.loadView()
-        view = resultView
+        view = resultView as? UIView
     }
 
     func didTapClose() {

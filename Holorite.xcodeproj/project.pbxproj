@@ -14,6 +14,12 @@
 		A326B119292C050800A43233 /* AmountCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326B118292C050800A43233 /* AmountCellTableViewCell.swift */; };
 		A326B11C292C052B00A43233 /* AmountCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326B11B292C052B00A43233 /* AmountCellType.swift */; };
 		A326B11E292C254100A43233 /* AmountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326B11D292C254100A43233 /* AmountCell.swift */; };
+		A326B12D292D5E0900A43233 /* ResultViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326B12C292D5E0900A43233 /* ResultViewControllerTests.swift */; };
+		A326B131292D758400A43233 /* FirstViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326B130292D758400A43233 /* FirstViewControllerTests.swift */; };
+		A326B137292D7B6200A43233 /* FirstViewDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326B136292D7B6200A43233 /* FirstViewDelegateMock.swift */; };
+		A326B139292D7BB500A43233 /* FirstViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326B138292D7BB500A43233 /* FirstViewTests.swift */; };
+		A326B13B292D7C7700A43233 /* ResultViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326B13A292D7C7700A43233 /* ResultViewTests.swift */; };
+		A326B140292D8B4100A43233 /* ResultViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326B13F292D8B4100A43233 /* ResultViewMock.swift */; };
 		A3C40CAF292BDB2F0063F09C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C40CAE292BDB2F0063F09C /* AppDelegate.swift */; };
 		A3C40CB1292BDB2F0063F09C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C40CB0292BDB2F0063F09C /* SceneDelegate.swift */; };
 		A3C40CB8292BDB310063F09C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3C40CB7292BDB310063F09C /* Assets.xcassets */; };
@@ -26,6 +32,16 @@
 		A3C40CDA292BE3720063F09C /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C40CD9292BE3720063F09C /* MainButton.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A326B127292D5C3700A43233 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3C40CA3292BDB2F0063F09C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3C40CAA292BDB2F0063F09C;
+			remoteInfo = Holorite;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		A326B110292BFD9200A43233 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		A326B112292C00D000A43233 /* Salary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salary.swift; sourceTree = "<group>"; };
@@ -34,6 +50,13 @@
 		A326B118292C050800A43233 /* AmountCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountCellTableViewCell.swift; sourceTree = "<group>"; };
 		A326B11B292C052B00A43233 /* AmountCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountCellType.swift; sourceTree = "<group>"; };
 		A326B11D292C254100A43233 /* AmountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountCell.swift; sourceTree = "<group>"; };
+		A326B123292D5C3700A43233 /* HoloriteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoloriteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A326B12C292D5E0900A43233 /* ResultViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewControllerTests.swift; sourceTree = "<group>"; };
+		A326B130292D758400A43233 /* FirstViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewControllerTests.swift; sourceTree = "<group>"; };
+		A326B136292D7B6200A43233 /* FirstViewDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewDelegateMock.swift; sourceTree = "<group>"; };
+		A326B138292D7BB500A43233 /* FirstViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewTests.swift; sourceTree = "<group>"; };
+		A326B13A292D7C7700A43233 /* ResultViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewTests.swift; sourceTree = "<group>"; };
+		A326B13F292D8B4100A43233 /* ResultViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewMock.swift; sourceTree = "<group>"; };
 		A3C40CAB292BDB2F0063F09C /* Holorite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Holorite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3C40CAE292BDB2F0063F09C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3C40CB0292BDB2F0063F09C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +72,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A326B120292D5C3700A43233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3C40CA8292BDB2F0063F09C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,10 +97,32 @@
 			path = Enum;
 			sourceTree = "<group>";
 		};
+		A326B124292D5C3700A43233 /* HoloriteTests */ = {
+			isa = PBXGroup;
+			children = (
+				A326B135292D7B4B00A43233 /* Mocks */,
+				A326B12C292D5E0900A43233 /* ResultViewControllerTests.swift */,
+				A326B130292D758400A43233 /* FirstViewControllerTests.swift */,
+				A326B13A292D7C7700A43233 /* ResultViewTests.swift */,
+				A326B138292D7BB500A43233 /* FirstViewTests.swift */,
+			);
+			path = HoloriteTests;
+			sourceTree = "<group>";
+		};
+		A326B135292D7B4B00A43233 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A326B136292D7B6200A43233 /* FirstViewDelegateMock.swift */,
+				A326B13F292D8B4100A43233 /* ResultViewMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		A3C40CA2292BDB2F0063F09C = {
 			isa = PBXGroup;
 			children = (
 				A3C40CAD292BDB2F0063F09C /* Holorite */,
+				A326B124292D5C3700A43233 /* HoloriteTests */,
 				A3C40CAC292BDB2F0063F09C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				A3C40CAB292BDB2F0063F09C /* Holorite.app */,
+				A326B123292D5C3700A43233 /* HoloriteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,6 +220,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A326B122292D5C3700A43233 /* HoloriteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A326B12B292D5C3700A43233 /* Build configuration list for PBXNativeTarget "HoloriteTests" */;
+			buildPhases = (
+				A326B11F292D5C3700A43233 /* Sources */,
+				A326B120292D5C3700A43233 /* Frameworks */,
+				A326B121292D5C3700A43233 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A326B128292D5C3700A43233 /* PBXTargetDependency */,
+			);
+			name = HoloriteTests;
+			productName = HoloriteTests;
+			productReference = A326B123292D5C3700A43233 /* HoloriteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A3C40CAA292BDB2F0063F09C /* Holorite */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3C40CBF292BDB310063F09C /* Build configuration list for PBXNativeTarget "Holorite" */;
@@ -194,6 +265,11 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					A326B122292D5C3700A43233 = {
+						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
+						TestTargetID = A3C40CAA292BDB2F0063F09C;
+					};
 					A3C40CAA292BDB2F0063F09C = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -213,11 +289,19 @@
 			projectRoot = "";
 			targets = (
 				A3C40CAA292BDB2F0063F09C /* Holorite */,
+				A326B122292D5C3700A43233 /* HoloriteTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A326B121292D5C3700A43233 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3C40CA9292BDB2F0063F09C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,6 +313,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A326B11F292D5C3700A43233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A326B12D292D5E0900A43233 /* ResultViewControllerTests.swift in Sources */,
+				A326B140292D8B4100A43233 /* ResultViewMock.swift in Sources */,
+				A326B139292D7BB500A43233 /* FirstViewTests.swift in Sources */,
+				A326B13B292D7C7700A43233 /* ResultViewTests.swift in Sources */,
+				A326B137292D7B6200A43233 /* FirstViewDelegateMock.swift in Sources */,
+				A326B131292D758400A43233 /* FirstViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3C40CA7292BDB2F0063F09C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,7 +351,64 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A326B128292D5C3700A43233 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3C40CAA292BDB2F0063F09C /* Holorite */;
+			targetProxy = A326B127292D5C3700A43233 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		A326B129292D5C3700A43233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GM2YUUZ32A;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.simim.HoloriteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Holorite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Holorite";
+			};
+			name = Debug;
+		};
+		A326B12A292D5C3700A43233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GM2YUUZ32A;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.simim.HoloriteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Holorite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Holorite";
+			};
+			name = Release;
+		};
 		A3C40CBD292BDB310063F09C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -426,6 +580,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A326B12B292D5C3700A43233 /* Build configuration list for PBXNativeTarget "HoloriteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A326B129292D5C3700A43233 /* Debug */,
+				A326B12A292D5C3700A43233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A3C40CA6292BDB2F0063F09C /* Build configuration list for PBXProject "Holorite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
