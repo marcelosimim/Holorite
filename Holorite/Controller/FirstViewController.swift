@@ -7,21 +7,16 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, ResultViewControllerDelegate  {
+class FirstViewController: UIViewController  {
     private let firstView = FirstView()
     private var salaryTypedString = ""
     private var discountTypedString = ""
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         setupTextFields()
         setupButtons()
-    }
-
-    func didTapClose() {
-        dismiss(animated: true)
     }
 
     private func setupView() {
@@ -54,7 +49,6 @@ class FirstViewController: UIViewController, ResultViewControllerDelegate  {
             let resultViewController = ResultViewController()
             resultViewController.salary = salary.value
             resultViewController.discount = discount.value
-            resultViewController.delegate = self
             present(resultViewController, animated: true)
         }
     }

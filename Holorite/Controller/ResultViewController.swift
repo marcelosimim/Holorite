@@ -7,14 +7,9 @@
 
 import UIKit
 
-protocol ResultViewControllerDelegate: AnyObject {
-    func didTapClose()
-}
-
 class ResultViewController: UIViewController {
     private let resultView = ResultView()
     private var cells: [AmountCell] = []
-    weak var delegate: ResultViewControllerDelegate?
     var salary: Double?
     var discount: Double?
 
@@ -87,7 +82,7 @@ class ResultViewController: UIViewController {
     }
 
     @objc private func didTapClose() {
-        delegate?.didTapClose()
+        dismiss(animated: true)
     }
 }
 
