@@ -13,14 +13,12 @@ protocol ResultViewDelegate: AnyObject {
 
 protocol ResultViewProcotol {
     var delegate: ResultViewDelegate? { get set }
-    func setupCells(salary: Double, discount: Double)
+    func updateTableView(_ cells: [AmountCell])
 }
 
 class ResultView: UIView, ResultViewProcotol {
-    weak var delegate: ResultViewDelegate?
     private var cells: [AmountCell] = []
-    private var salary: Double = 0
-    private var discount: Double = 0
+    weak var delegate: ResultViewDelegate?
 
     private lazy var closeButton: UIButton = {
         let button = UIButton()
@@ -65,50 +63,8 @@ class ResultView: UIView, ResultViewProcotol {
         delegate?.didTapClose()
     }
 
-    func setupCells(salary: Double, discount: Double) {
-        cells.append(AmountCell(discountPercentage: 0, value: salary, title: "Salário Bruto", type: .salary))
-        cells.append(AmountCell(discountPercentage: 0, value: discount, title: "Descontos", type: .discount))
-        calculateINSS()
-    }
-
-    private func calculateINSS() {
-        var inssDiscount = 0.0
-
-        if salary.isLess(than: 1212) {
-            inssDiscount = 0.075
-        } else if salary.isLess(than: 2427.35) {
-            inssDiscount = 0.09
-        } else if salary.isLess(than: 3641.03) {
-            inssDiscount = 0.12
-        } else {
-            inssDiscount = 0.14
-        }
-
-        cells.append(AmountCell(discountPercentage: inssDiscount*100, value: salary*inssDiscount, title: "Desconto INSS", type: .discount))
-        calculateIRRF()
-    }
-
-    private func calculateIRRF() {
-        var irrfDiscount = 0.0
-
-        if salary.isGreater(than: 1903.98) && salary.isLess(than: 2826.65) {
-            irrfDiscount = 0.075
-        } else if salary.isLess(than: 3751.06) {
-            irrfDiscount = 0.15
-        } else if salary.isLess(than: 4664.68) {
-            irrfDiscount = 0.225
-        } else {
-            irrfDiscount = 0.275
-        }
-
-        cells.append(AmountCell(discountPercentage: irrfDiscount*100, value: salary*irrfDiscount, title: "Desconto IRRF", type: .discount))
-        deductedSalary()
-    }
-
-    private func deductedSalary() {
-        let finalSalary = salary - (cells[1].value) - (cells[2].value) - (cells[3].value)
-        cells.append(AmountCell(discountPercentage: 0, value: finalSalary, title: "Salário Liquido", type: .salary))
-
+    func updateTableView(_ cells: [AmountCell]) {
+        self.cells = cells
         tableView.reloadData()
     }
 }

@@ -32,9 +32,7 @@ class FirstViewController: UIViewController, FirstViewDelegate {
 
     func didTapCalculate(_ salary: Salary, _ discount: Discount) {
         if salary.isValid() && discount.isValid() {
-            let resultViewController = ResultViewController()
-            resultViewController.salary = salary.value
-            resultViewController.discount = discount.value
+            let resultViewController = ResultViewController(salary: salary.value ?? 0, discount: discount.value ?? 0)
             present(resultViewController, animated: true)
         }
     }

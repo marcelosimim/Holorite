@@ -13,7 +13,7 @@ final class ResultViewControllerTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        sut = ResultViewController(resultView: ResultViewMock())
+        sut = ResultViewController(resultView: ResultViewMock(), salary: 5000, discount: 50)
     }
 
     override func tearDown() {
@@ -32,7 +32,51 @@ final class ResultViewControllerTests: XCTestCase {
             return
         }
         sut.viewDidLoad()
+
         XCTAssertNotNil(view.delegate)
-        XCTAssertTrue(view.setupCellsWasCalled)
+    }
+
+    func test_setupCellForFirstRange() {
+        guard let view = sut.view as? ResultViewMock else {
+            XCTFail()
+            return
+        }
+        sut = ResultViewController(resultView: ResultViewMock(), salary: 1000, discount: 50)
+        sut.viewDidLoad()
+
+        XCTAssertTrue(view.updateTableViewWasCalled)
+    }
+
+    func test_setupCellForSecondRange() {
+        guard let view = sut.view as? ResultViewMock else {
+            XCTFail()
+            return
+        }
+        sut = ResultViewController(resultView: ResultViewMock(), salary: 2000, discount: 50)
+        sut.viewDidLoad()
+
+        XCTAssertTrue(view.updateTableViewWasCalled)
+    }
+
+    func test_setupCellForThirdRange() {
+        guard let view = sut.view as? ResultViewMock else {
+            XCTFail()
+            return
+        }
+        sut = ResultViewController(resultView: ResultViewMock(), salary: 3000, discount: 50)
+        sut.viewDidLoad()
+
+        XCTAssertTrue(view.updateTableViewWasCalled)
+    }
+
+    func test_setupCellForFourthRange() {
+        guard let view = sut.view as? ResultViewMock else {
+            XCTFail()
+            return
+        }
+        sut = ResultViewController(resultView: ResultViewMock(), salary: 4000, discount: 50)
+        sut.viewDidLoad()
+
+        XCTAssertTrue(view.updateTableViewWasCalled)
     }
 }

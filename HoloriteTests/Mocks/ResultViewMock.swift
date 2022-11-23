@@ -10,10 +10,12 @@ import Foundation
 import UIKit
 
 class ResultViewMock: UIView, ResultViewProcotol {
+
+
     var delegate: ResultViewDelegate? = nil
 
-    var setupCellsWasCalled = false
-    func setupCells(salary: Double, discount: Double) {
-        setupCellsWasCalled = true
+    var updateTableViewWasCalled = false
+    func updateTableView(_ cells: [Holorite.AmountCell]) {
+        updateTableViewWasCalled = true
     }
 }

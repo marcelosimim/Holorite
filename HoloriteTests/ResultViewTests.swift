@@ -20,8 +20,4 @@ final class ResultViewTests: XCTestCase {
         sut = nil
         super.tearDown()
     }
-
-//    func test_setupCells() {
-//        sut.setupCells(salary: 5000, discount: 50)
-//    }
 }

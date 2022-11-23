@@ -20,8 +20,4 @@ final class FirstViewTests: XCTestCase {
         sut = nil
         super.tearDown()
     }
-
-//    func test_didTapCalculate() {
-//        sut.delegate = FirstViewDelegateMock()
-//    }
 }
